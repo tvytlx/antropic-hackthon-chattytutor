@@ -2,6 +2,8 @@
 
 The main purpose of this project is to genereate a comic strip from a single word.
 
+NOTE: the backend code is not integrated with the frontend, because we deployed it manually on the GPU server.
+
 ## Generating the story
 
 check `claude.py`, the chain of thoughts's prompts is as follows:
@@ -15,5 +17,3 @@ check `claude.py`, the chain of thoughts's prompts is as follows:
 We use the https://github.com/AUTOMATIC1111/stable-diffusion-webui to generate images for the story.
 
 Also a simple Flask service (check `image_service.py`) to handle the request and upload image to Cloudflare.
-
-The backend code in this repo is for demonstrating, you should deploy it to a GPU server if you want to run it on your own.
