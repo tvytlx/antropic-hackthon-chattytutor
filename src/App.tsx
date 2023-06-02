@@ -142,8 +142,7 @@ const stories = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [word, setWord] = useState("proximity");
+  const [word] = useState("proximity");
 
   return (
     <div className={st.App}>
